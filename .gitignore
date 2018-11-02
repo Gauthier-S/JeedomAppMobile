@@ -33,3 +33,7 @@ gradle-app.setting
 
 # google-services
 app/google-services.json
+gradlew
+gradlew.bat
+local.properties
+settings.gradle
