@@ -4,9 +4,9 @@ import android.app.Application;
 
 import com.google.firebase.FirebaseApp;
 
-public class JeedomAppGauthier extends Application {
+public class SmartHouse extends Application {
 
-    private static JeedomAppGauthier jeedomAppGauthier;
+    private static SmartHouse smartHouse;
 
     private static FirebaseApp firebaseApp;
 
@@ -15,13 +15,12 @@ public class JeedomAppGauthier extends Application {
     public void onCreate() {
         super.onCreate();
 
-        jeedomAppGauthier = this;
+        smartHouse = this;
         firebaseApp = FirebaseApp.getInstance();
-
-
+        
     }
 
-    public static JeedomAppGauthier getJeedomAppGauthier () {
-        return jeedomAppGauthier;
+    public static SmartHouse getSmartHouse () {
+        return smartHouse;
     }
 }
