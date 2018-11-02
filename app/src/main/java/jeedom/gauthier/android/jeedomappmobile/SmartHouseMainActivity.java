@@ -137,6 +137,10 @@ public class SmartHouseMainActivity extends AppCompatActivity
                         public void onComplete(@NonNull Task<Void> task) {
                             login.setEnabled(true);
                             logout.setEnabled(false);
+                            login.setTitle(R.string.login);
+                            name.setText(R.string.nav_header_name);
+                            email.setText(R.string.nav_header_email);
+                            Glide.with(photo).load(R.mipmap.ic_launcher_round).apply(RequestOptions.bitmapTransform(new CircleCrop())).into(photo);
                         }
                     });
 
